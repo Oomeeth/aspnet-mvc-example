@@ -1,0 +1,65 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Books]
+       [dbo].[Library]
+       [dbo].[Users]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Books].[Description] is being dropped, data loss could occur.
+       The column [dbo].[Books].[Year] is being dropped, data loss could occur.
+       The column [dbo].[Books].[BookDescription] on table [dbo].[Books] must be added, but the column has no default value and
+         does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+       The column [dbo].[Books].[BorrowedByUserId] on table [dbo].[Books] must be added, but the column has no default value
+         and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+       The column [dbo].[Books].[ReleaseYear] on table [dbo].[Books] must be added, but the column has no default value and
+         does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+       The column [dbo].[Library].[Name] is being dropped, data loss could occur.
+       The column [dbo].[Library].[LibraryName] on table [dbo].[Library] must be added, but the column has no default value and
+         does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+       The column [dbo].[Users].[Address] is being dropped, data loss could occur.
+       The column [dbo].[Users].[Password] is being dropped, data loss could occur.
+       The column [dbo].[Users].[UserAddress] on table [dbo].[Users] must be added, but the column has no default value and
+         does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+       The column [dbo].[Users].[UserPassword] on table [dbo].[Users] must be added, but the column has no default value and
+         does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+
+** User actions
+     Table rebuild
+       [dbo].[Books] (Table)
+       [dbo].[Library] (Table)
+       [dbo].[Users] (Table)
+     Create
+       [dbo].[CreateBook] (Procedure)
+       [dbo].[CreateUser] (Procedure)
+       [dbo].[GetBooks] (Procedure)
+       [dbo].[GetLibraries] (Procedure)
+
+** Supporting actions
+
+The column [dbo].[Books].[Description] is being dropped, data loss could occur.
+The column [dbo].[Books].[Year] is being dropped, data loss could occur.
+The column [dbo].[Books].[BookDescription] on table [dbo].[Books] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [dbo].[Books].[BorrowedByUserId] on table [dbo].[Books] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [dbo].[Books].[ReleaseYear] on table [dbo].[Books] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [dbo].[Library].[Name] is being dropped, data loss could occur.
+The column [dbo].[Library].[LibraryName] on table [dbo].[Library] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [dbo].[Users].[Address] is being dropped, data loss could occur.
+The column [dbo].[Users].[Password] is being dropped, data loss could occur.
+The column [dbo].[Users].[UserAddress] on table [dbo].[Users] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [dbo].[Users].[UserPassword] on table [dbo].[Users] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

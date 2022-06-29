@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Library]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[LibraryName] NVARCHAR(50) NOT NULL,
+	[Location] NVARCHAR(50) NOT NULL,
+	[OperatingHours] NVARCHAR(50) NOT NULL,
+	[Phone] NVARCHAR(50) NOT NULL,
+	[Email] NVARCHAR(50) NOT NULL
+)
